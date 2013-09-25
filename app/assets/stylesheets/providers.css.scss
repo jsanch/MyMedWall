@@ -1,0 +1,84 @@
+// Place all the styles related to the Providers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.jumbotron {
+  margin: 50px 0;
+}
+
+.specialunit {
+  background-color: #ccd;
+}
+
+#q {
+  margin: 0px;
+}
+
+.spanbackground {
+  background-color: #69B4C9;
+  border-radius: 10px;
+  color: #333 !important;
+  padding: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.centeredtext {
+  text-align: center;
+}
+
+.providerimage {
+  height: 300px;
+  width: 300px;
+}
+
+.providerprofile {
+  padding: 200px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.phonenumberholder {
+  background-color: #1B7AE0;
+  color: white;
+  border-radius: 6px;
+  width: 300px;
+}
+
+.msgholder {
+  background-color: green;
+  color: white;
+  border-radius: 6px;
+  width: 300px;
+}
+
+.navbar-inner {
+  background-color: #1159AB; /* background color will be black for all browsers */
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+}
+
+.navbar .nav > li > a {
+    text-decoration: none;
+    text-shadow: none;
+    color: white;
+}
+
+.customhovercolor:hover {
+    text-decoration: none;
+    text-shadow: none;
+    background-color: #D96A0F;
+    color: white;
+}
+
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+  color: white;
+}
+
+.navbar .brand {
+    text-decoration: none;
+    text-shadow: none;
+    color: white;
+    font-size: 24px;
+}

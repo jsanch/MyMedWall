@@ -1,0 +1,27 @@
+.hero-unit.providerprofile
+  .row-fluid
+    .span4
+      =image_tag  "http://graylab.dfci.harvard.edu/assets/images/Mass%20General.jpg", :class => "providerimage"
+      %br
+      %br
+      - if @provider.messagesallowd
+        .msgholder.centeredtext
+          .i.icon-comment
+          &nbsp;
+          Send a Message
+      %br
+      .phonenumberholder.centeredtext
+        %i.icon-phone
+        &nbsp;
+        = "#{@provider.phone_number}"
+    .span8
+      %h2.centeredtext
+        = @provider.name
+      .row-fluid
+        ="Contact Person: #{@provider.contact_first_name} #{@provider.contact_last_name}"
+      .row-fluid
+        ="Hospital Affiliation: #{@provider.hospital_affiliation}"
+      .row-fluid
+        ="Medical Specialty: #{@provider.specialty}"
+      .row-fluid
+        ="Location: #{@provider.locations.first.city}, #{@provider.locations.first.state} #{@provider.locations.first.zipcode}"

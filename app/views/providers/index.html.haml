@@ -1,0 +1,23 @@
+.hero-unit.specialunit
+  = form_tag search_providers_path, :method => 'get' do
+    =text_field_tag :q, params[:q], placeholder: 'Free-Text Search...'
+    =submit_tag :Search, :class => "btn"
+
+  %table.table.table-hover.table-condensed
+    %thead
+      %tr
+        %th
+          Provider Name
+        %th
+          Medical Specialty
+        %th
+          Location
+    %tbody
+      - @providers.each do |provider|
+        %tr{:onclick => "document.location = '#{ url_for :controller => 'providers', :action => 'index' }/#{provider.id}';"}
+          %td
+            = provider.name
+          %td
+            = provider.specialty
+          %td
+            = "#{provider.locations.first.city}, #{provider.locations.first.state} #{provider.locations.first.zipcode}"

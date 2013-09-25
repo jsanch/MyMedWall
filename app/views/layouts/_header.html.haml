@@ -1,0 +1,34 @@
+.row-fluid
+  .span6
+    %img.logo-left{src: "https://secure.mymedwall.com/phr/Images/MyMed/MainLogo.png"}/
+  .span6
+    %img.logo-right{src: "http://i.imgur.com/R1r1xQn.png"}/
+.navbar
+  .navbar-inner
+    .container
+      %button.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse", type: "button"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.brand{href: "#{url_for :controller=>'/pages', :action=>'index'}"} MyMedWall CHAD Services
+      .nav-collapse.collapse
+        %ul.nav
+          %li.divider-vertical
+          %li{class: "customhovercolor #{'active' if params[:controller] == 'patients'}"}
+            %a{href: ""} Patients
+          %li.divider-vertical
+          %li{class: "customhovercolor #{'active' if params[:controller] == 'providers'}"}
+            %a{href: "#{url_for :controller=>'/providers', :action=>'index'}"} Providers
+          %li.divider-vertical
+          %li{class: "customhovercolor #{'active' if params[:controller] == 'partners'}"}
+            %a{href: "#{url_for :controller=>'/partners', :action=>'index'}"} Partners
+          %li.divider-vertical
+        %ul.nav.pull-right
+          %li.divider-vertical
+          - if user_signed_in?
+            %li{class: "customhovercolor #{'active' if params[:controller] == 'devise/registrations' && params[:action] == 'edit'}"}
+              = link_to 'Edit Profile', edit_user_registration_path
+          - else
+            %li{class: "customhovercolor #{'active' if params[:controller] == 'devise/sessions' && params[:action] == 'new'}"}
+              %a{href: "#{url_for :controller=>'/devise/sessions', :action=>'new'}"} Sign In
+          %li.divider-vertical

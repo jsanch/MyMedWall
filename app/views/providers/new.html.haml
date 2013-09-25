@@ -1,0 +1,26 @@
+%h3
+  Thank you for registering with MyMedWall CHAD Services. To continue, please fill out the following form
+
+= form_for @provider, :url => {:action => "create"} do |f|
+  %div
+    = f.label "Provider Name"
+    = f.text_field :name
+  %div
+    = f.label "Primary Contact's First Name"
+    = f.text_field :contact_first_name
+  %div
+    = f.label "Primary Contact's Last Name"
+    = f.text_field :contact_last_name
+  %div
+    = f.label "Hospital Affiliation"
+    = f.text_field :hospital_affiliation
+  %div
+    = f.label "Contact Number"
+    = f.text_field :phone_number
+  %div
+    = f.label "Medical Specialty"
+    = f.text_field :specialty
+  %div
+    = f.submit "Login"
+  %div
+    = "Hello #{@provider.id}"
