@@ -28,6 +28,9 @@
           - if user_signed_in?
             %li{class: "customhovercolor #{'active' if params[:controller] == 'devise/registrations' && params[:action] == 'edit'}"}
               = link_to 'Edit Profile', edit_user_registration_path
+            %li.divider-vertical
+            %li{class: "customhovercolor #{'active' if params[:controller] == 'devise/registrations' && params[:action] == 'destroy'}"}
+              = link_to 'Sign Out', destroy_user_session_path, :method => "delete"
           - else
             %li{class: "customhovercolor #{'active' if params[:controller] == 'devise/sessions' && params[:action] == 'new'}"}
               %a{href: "#{url_for :controller=>'/devise/sessions', :action=>'new'}"} Sign In
