@@ -27,7 +27,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  port:5432
+  port: 5432
   host: ec2-54-227-243-78.compute-1.amazonaws.com
   database: d18223bvqforc2
   username: aucvhkleddesug
@@ -38,7 +38,7 @@ test:
   adapter: postgresql
   encoding: unicode
   host: ec2-54-227-243-78.compute-1.amazonaws.com
-  port:5432
+  port: 5432
   database: d18223bvqforc2
   username: aucvhkleddesug
   password: 0SC91lk_lc-6o2Q1BNfxBsweFg
@@ -49,7 +49,7 @@ production:
   encoding: unicode
   adapter: postgresql
   host: ec2-54-227-243-78.compute-1.amazonaws.com
-  port:5432
+  port: 5432
   database: d18223bvqforc2
   username: aucvhkleddesug
   password: 0SC91lk_lc-6o2Q1BNfxBsweFg
