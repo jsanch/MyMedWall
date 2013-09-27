@@ -32,13 +32,18 @@ development:
   timeout: 5000
 test:
   adapter: postgresql
-  host: localhost
-  database: my_datbase_test
+  host: ec2-54-227-243-78.compute-1.amazonaws.com
+  database: d18223bvqforc2
+  username: aucvhkleddesug
+  password: 0SC91lk_lc-6o2Q1BNfxBsweFg
   pool: 5
   timeout: 5000
 
 production:
   adapter: postgresql
-  database: my_datbase_production
+  host: ec2-54-227-243-78.compute-1.amazonaws.com
+  database: d18223bvqforc2
+  username: aucvhkleddesug
+  password: 0SC91lk_lc-6o2Q1BNfxBsweFg
   pool: 5
   timeout: 5000
