@@ -1,7 +1,12 @@
 .hero-unit.specialunit
+  %h2 Medical Provider Directory
+  %br/
   = form_tag search_providers_path, :method => 'get' do
-    =text_field_tag :q, params[:q], placeholder: 'Free-Text Search...'
-    =submit_tag :Search, :class => "btn"
+    =text_field_tag :q, params[:q], placeholder: 'Enter your search query...'
+    %button{:class => "btn", :name => "commit", :type => "submit"}
+      %i.icon-search
+    %a{:class => "btn", :href => "#{ url_for :controller => 'providers', :action => 'search' }?utf8=✓&q=#{@city}+#{@state}&commit="}
+      %i.icon-pushpin
 
   %table.table.table-hover.table-condensed
     %thead
@@ -20,4 +25,4 @@
           %td
             = provider.specialty
           %td
-            = "#{provider.locations.first.city}, #{provider.locations.first.state} #{provider.locations.first.zipcode}"
+            = "#{provider.city}, #{provider.state} #{provider.zipcode}"

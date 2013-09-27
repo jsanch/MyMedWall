@@ -11,19 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130925132432) do
-
-  create_table "locations", :force => true do |t|
-    t.string   "city"
-    t.string   "state"
-    t.string   "street_number"
-    t.string   "street_name"
-    t.string   "zipcode"
-    t.string   "country"
-    t.integer  "provider_id"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
-  end
+ActiveRecord::Schema.define(:version => 20130927195751) do
 
 # Could not dump table "providers" because of following StandardError
 #   Unknown type 'bool' for column 'messagesallowd'

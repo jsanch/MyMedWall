@@ -10,6 +10,9 @@ MyMedWallRails::Application.routes.draw do
   resources :partners do
   end
 
+  resources :patients do
+  end
+
   root to: 'pages#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.

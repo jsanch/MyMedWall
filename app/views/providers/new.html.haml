@@ -7,6 +7,12 @@
       = f.label "Provider Name"
       = f.text_field :name
     %div
+      = f.label "MyMedWall Username"
+      = f.text_field :username
+    %div
+      = f.label "MyMedWall Password"
+      = f.password_field :password
+    %div
       = f.label "Primary Contact's First Name"
       = f.text_field :contact_first_name
     %div
@@ -22,7 +28,22 @@
       = f.label "Medical Specialty"
       = f.text_field :specialty
     %div
-      = f.check_box :messagesallowd, class: "floatleft"
-      = f.label "Allow patients contact you via our messaging service", class: "floatleft"
+      = f.label "City"
+      = f.text_field :city
+    %div
+      = f.label "State"
+      = f.text_field :state
+    %div
+      = f.label "Zipcode"
+      = f.text_field :zipcode
+    %div
+      = f.label "Street Number"
+      = f.text_field :street_number
+    %div
+      = f.label "Street Name"
+      = f.text_field :street_name
+    %div
+      = f.check_box :messagesallowd
+      = f.label "Allow patients contact you via our messaging service"
     %div
       = f.submit "Login", class: "btn btn-success"

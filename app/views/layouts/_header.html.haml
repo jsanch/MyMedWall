@@ -1,8 +1,8 @@
 .row-fluid
   .span6
-    %img.logo-left{src: "https://secure.mymedwall.com/phr/Images/MyMed/MainLogo.png"}/
+    .logo-left
   .span6
-    %img.logo-right{src: "http://i.imgur.com/R1r1xQn.png"}/
+    .logo-right
 .navbar
   .navbar-inner
     .container
@@ -15,7 +15,7 @@
         %ul.nav
           %li.divider-vertical
           %li{class: "customhovercolor #{'active' if params[:controller] == 'patients'}"}
-            %a{href: ""} Patients
+            %a{href: "#{url_for :controller=>'/patients', :action=>'index'}"} Patients
           %li.divider-vertical
           %li{class: "customhovercolor #{'active' if params[:controller] == 'providers'}"}
             %a{href: "#{url_for :controller=>'/providers', :action=>'index'}"} Providers

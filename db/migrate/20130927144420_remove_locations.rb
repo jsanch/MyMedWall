@@ -1,5 +1,9 @@
-class CreateLocations < ActiveRecord::Migration
-  def change
+class RemoveLocations < ActiveRecord::Migration
+  def up
+    drop_table :locations
+  end
+
+  def down
     create_table :locations do |t|
       t.string :city
       t.string :state

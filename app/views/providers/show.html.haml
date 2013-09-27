@@ -4,7 +4,7 @@
       =image_tag  "http://graylab.dfci.harvard.edu/assets/images/Mass%20General.jpg", :class => "providerimage"
       %br/
       %br/
-      - if @provider.messagesallowd
+      - if @provider.messagesallowd == "t"
         .msgholder.centeredtext
           .i.icon-comment
           &nbsp;
@@ -24,4 +24,4 @@
       .row-fluid
         ="Medical Specialty: #{@provider.specialty}"
       .row-fluid
-        ="Location: #{@provider.locations.first.city}, #{@provider.locations.first.state} #{@provider.locations.first.zipcode}"
+        ="Location: #{@provider.city}, #{@provider.state} #{@provider.zipcode}"

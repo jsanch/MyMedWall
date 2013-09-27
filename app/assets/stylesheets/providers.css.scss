@@ -16,7 +16,7 @@
 }
 
 .specialunit {
-  background-color: #ccd;
+  background-color: rgba(0, 100, 255, 0.3);
 }
 
 #q {
@@ -24,9 +24,9 @@
 }
 
 .spanbackground {
-  background-color: #69B4C9;
+  background-color: rgba(0, 100, 255, 0.3);
   border-radius: 10px;
-  color: #333 !important;
+  color: #111 !important;
   padding: 8px;
   padding-top: 2px;
   padding-bottom: 2px;
@@ -62,7 +62,7 @@
 }
 
 .navbar-inner {
-  background-color: #1159AB; /* background color will be black for all browsers */
+  background-color: #1159AB;
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
@@ -74,10 +74,15 @@
     color: white;
 }
 
+.navbar .nav .active > a, .navbar .nav .active > a:hover {
+    background-color: #FF7D06;
+    color: white;
+}
+
 .customhovercolor:hover {
     text-decoration: none;
     text-shadow: none;
-    background-color: #D96A0F;
+    background-color: #FF7D06 !important;
     color: white;
 }
 
@@ -89,5 +94,5 @@
     text-decoration: none;
     text-shadow: none;
     color: white;
-    font-size: 24px;
+    font-size: 21px;
 }

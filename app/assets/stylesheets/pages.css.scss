@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+img {vertical-align:middle;}
+
 .floatleft {
   float: left;
 }
@@ -9,7 +16,8 @@
 .coloredbody {
   background-color: rgb(245, 242, 239);
   zoom: 1;
-  background-repeat: repeat no-repeat;
+  /*background-repeat: repeat no-repeat;*/
+  background: url(http://i.imgur.com/diGhGKM.png);
 }
 
 .navbar {
@@ -25,13 +33,15 @@
 }
 
 .logo-left {
-  float:left;
-  margin-top: 4%;
+  background:url("https://secure.mymedwall.com/phr/Images/MyMed/MainLogo.png") no-repeat center center;
+  height: 130px;
+  width: 100%;
 }
 
 .logo-right {
-  float: left;
-  vertical-align: middle;
+  background:url("http://i.imgur.com/R1r1xQn.png") no-repeat center center;
+  height: 130px;
+  width: 100%;
 }
 
 .smallerwidth {
