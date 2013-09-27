@@ -21,12 +21,12 @@ gem 'font-awesome-rails',         '~> 3.0'
 gem 'handlebars_assets',          '~> 0.13'
 gem 'thin'
 gem 'taps'
-gem 'rails_12factor', group: :production
+
 
 
 group :production do 
   gem 'pg'
-  gem 'rails_12factor'
+  # gem 'rails_12factor'
 end
 
 group :assets do
