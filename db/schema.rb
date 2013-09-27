@@ -13,8 +13,26 @@
 
 ActiveRecord::Schema.define(:version => 20130927195751) do
 
-# Could not dump table "providers" because of following StandardError
-#   Unknown type 'bool' for column 'messagesallowd'
+  create_table "providers", :force => true do |t|
+    t.string   "name"
+    t.string   "specialty"
+    t.string   "contact_first_name"
+    t.string   "contact_last_name"
+    t.string   "hospital_affiliation"
+    t.string   "phone_number"
+    t.string   "flavor"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+    t.boolean  "messagesallowd"
+    t.string   "city"
+    t.string   "state"
+    t.string   "street_number"
+    t.string   "street_name"
+    t.string   "zipcode"
+    t.string   "country"
+    t.string   "username"
+    t.string   "password"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

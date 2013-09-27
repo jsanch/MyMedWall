@@ -20,6 +20,8 @@ gem 'bootstrap-sass',             '~> 2.2'
 gem 'font-awesome-rails',         '~> 3.0'
 gem 'handlebars_assets',          '~> 0.13'
 gem 'thin'
+gem 'taps'
+
 
 group :production do 
   gem 'pg'
@@ -35,7 +37,7 @@ group :assets do
 end
 
 group :test, :development do 
-  gem 'sqlite3',                  '~> 1.3'
+  gem 'pg'
   gem 'rspec-rails',              '~> 2.10' 
   gem 'guard-rspec',              '~> 0.5' 
   gem 'guard-spork',              '~> 0.3' 
