@@ -26,8 +26,10 @@
 
 development:
   adapter: postgresql
-  host: localhost
-  database: my_database_development
+  host: ec2-54-227-243-78.compute-1.amazonaws.com
+  database: d18223bvqforc2
+  username: aucvhkleddesug
+  password: 0SC91lk_lc-6o2Q1BNfxBsweFg
   pool: 5
   timeout: 5000
 test:
